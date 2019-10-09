@@ -38,6 +38,10 @@ public class StackArray {
   }
 
   public void removeItem() {
+    if(this.stack.length == 0) {
+      System.out.println("No such stack to remove item from.");
+      return;
+    }
     int[] tmpStack = this.stack;
     this.stack = new int[this.stack.length-1];
     for(int i = 0; i < this.stack.length; i++) {
@@ -48,8 +52,8 @@ public class StackArray {
 
   String showStack() {
     StringBuilder stack = new StringBuilder();
-    for(int x : this.stack) {
-      stack.append(x).append(", ");
+    for(int x = 0; x < this.stack.length; x++) {
+      stack.append(this.stack[x]).append(", ");
     }
     return stack.toString().replace(", ", "\n");
   }

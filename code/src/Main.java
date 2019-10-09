@@ -17,6 +17,14 @@ public class Main {
     System.out.println("First element from Stack: " + stack.getFromStack());
     stack.removeItem();
     System.out.println("\nThis is the current Stack:\n" + stack.showStack());
+    stack.removeItem();
+    System.out.println("\nThis is the current Stack:\n" + stack.showStack());
+    stack.removeItem();
+    System.out.println("\nThis is the current Stack:\n" + stack.showStack());
+    stack.removeItem();
+    System.out.println("\nThis is the current Stack:\n" + stack.showStack());
+    stack.removeItem();
+    System.out.println("\nThis is the current Stack:\n" + stack.showStack());
 
   }
 }
