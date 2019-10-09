@@ -25,6 +25,11 @@ public class Main {
     System.out.println("\nThis is the current Stack:\n" + stack.showStack());
     stack.removeItem();
     System.out.println("\nThis is the current Stack:\n" + stack.showStack());
+    stack.addToStack(4);
+    stack.addToStack(3);
+    stack.addToStack(2);
+    stack.addToStack(1);
+    System.out.println(stack.showStack());
 
   }
 }
