@@ -37,6 +37,15 @@ public class StackArray {
     }
   }
 
+  public void removeItem() {
+    int[] tmpStack = this.stack;
+    this.stack = new int[this.stack.length-1];
+    for(int i = 0; i < this.stack.length; i++) {
+      this.stack[i] = tmpStack[i+1];
+    }
+    System.out.printf("Removed the value: %d from the Stack\n", tmpStack[0]);
+  }
+
   String showStack() {
     StringBuilder stack = new StringBuilder();
     for(int x : this.stack) {

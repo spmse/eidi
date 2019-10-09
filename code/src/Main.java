@@ -13,7 +13,10 @@ public class Main {
     stack.addToStack(3);
     stack.addToStack(3);
     stack.addToStack(7);
-    System.out.println("\nThis is the current Stack: " + stack.showStack());
+    System.out.println("\nThis is the current Stack:\n" + stack.showStack());
+    System.out.println("First element from Stack: " + stack.getFromStack());
+    stack.removeItem();
+    System.out.println("\nThis is the current Stack:\n" + stack.showStack());
 
   }
 }
