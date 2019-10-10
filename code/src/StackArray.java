@@ -29,7 +29,7 @@ public class StackArray {
   }
 
   int getFromStack() {
-    if(!(this.stack==null)) {
+    if(this.stack!=null) {
       return this.stack[0];
     } else {
       System.err.println("Error:\nNo such Stack to get element from.");
@@ -37,7 +37,7 @@ public class StackArray {
     }
   }
 
-  public void removeItem() {
+  void removeItem() {
     if(this.stack.length == 0) {
       System.out.println("No such stack to remove item from.");
       return;
